@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Nexus Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header class="glass-header">
+        <div class="logo">
+            <span class="neon-text">NEXUS</span>DIGITAL
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link hover-underline">Home</a></li>
+                <li><a href="services.html" class="nav-link hover-underline">Services</a></li>
+                <li><a href="about.html" class="nav-link hover-underline">About</a></li>
+                <li><a href="#contact" class="nav-link hover-underline active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <p class="section-subtitle">We'd love to hear about your project</p>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="mainContactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <div class="input-container">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" name="name" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <div class="input-container">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" name="email" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-container">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <div class="input-container">
+                                <i class="fas fa-cog"></i>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="app">App Development</option>
+                                    <option value="cloud">Cloud Services</option>
+                                    <option value="data">Data Analytics</option>
+                                    <option value="seo">SEO Optimization</option>
+                                    <option value="cyber">Cybersecurity</option>
+                                </select>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <div class="input-container">
+                                <i class="fas fa-comment"></i>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary pulse">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Our Location</h3>
+                        <p>123 Tech Park Avenue<br>San Francisco, CA 94107</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone Numbers</h3>
+                        <p>+1 (415) 555-0100<br>+1 (415) 555-0101</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <h3>Email Addresses</h3>
+                        <p>info@nexusdigital.com<br>support@nexusdigital.com</p>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="map-section">
+            <div class="map-container">
+                <div class="map-overlay"></div>
+                <!-- Map iframe would be added here in production -->
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Interactive Map Location</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="back-to-home">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
